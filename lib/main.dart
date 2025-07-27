@@ -32,7 +32,7 @@ class HomeScreen extends StatelessWidget {
     );
 
     // Wait for 2 seconds (simulate loading)
-    await Future.delayed(const Duration(seconds: 1));
+    await Future.delayed(const Duration(seconds: 5));
 
     // Close the loading dialog
     Navigator.pop(context);
@@ -47,7 +47,7 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Home Screen')),
+      appBar: AppBar(title: const Text('Home page')),
       body: Center(
         child: ElevatedButton(
           onPressed: () => _goToContactWithLoading(context),
